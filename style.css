@@ -36,7 +36,7 @@ header{
 	display: block;
 }
 
-/* 1 - Marketng head section*/
+/*=============== 1 - Marketng head section ============== */
 
 #master-nav nav{
 	position: absolute;
@@ -159,8 +159,12 @@ header{
 	margin: 5%;
 }
 
-/* 2 section */
-.motto{
+
+/*============== 2 section feature heading ===============*/
+
+
+.features-heading{
+	clear: left;
 	display: -webkit-flex;
 	display: flex;
 	float: left;
@@ -168,70 +172,102 @@ header{
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
-	height: 30em;
 	width: 100%;
 	text-align: center;
+	margin-bottom: 10%;
 }
-.master-qoute h3{
+.master-qoute{
+	width: 100%;
+	display: block;
+}
+.master-qoute img{
+	margin-top: 7%;
+	width: 10%;
+}
+.master-qoute h2{
 	display: 0 0 auto;
 	font-weight: 300;
 	color: #4c4c4c;
+	margin-bottom: 0;
 }
-
-.posts{
-	float: left;
-	width: 100%;
-}
-
-.post-section{
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: block;
-	clear: both;
-	margin: 0 auto 18em auto;
-	height: 40em;
-}
-
-.post-title{
-	padding: 25% 3% 0 3%;
-	text-shadow: 1px 1px 1px #000;
-}
-.post-title p{
-	margin-top: 0.2em;
-	color: white;
-	font-size: 2em;
+.master-qoute p{
+	display: 0 0 auto;
 	font-weight: 200;
-	font-style: italic;
+	color: #4c4c4c;
+	font-size: 3em;
+	margin-top: 0.4em;
 }
-.post-title h3{
-	color: white;
+
+
+/* ===================== 3 Features list ================= */
+
+.features{
+  display: -webkit-flex;
+	display: flex;
+	float: left;
+	-webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+	width: 100%;
+	margin-bottom: 10%;
+}
+
+.features-flexleft{
+	float: left;
+	text-align: right;
+	clear: left;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+  flex-direction: column;
+  width: 30%;
+}
+.features-block{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 2em;
+}
+.features-block h3{
 	font-weight: 400;
 	margin-bottom: 0;
 }
-
-.travel1-img{
-	background-image: url('singapore.jpg');
-	width: 60%;
-	background-position: 0% 90%;
-}
-.travel2-img{ 
-	background-image: url('vienna.jpg');
-	width: 60%;
-	background-position: 0% 80%;
-}
-.travel3-img{
-	background-position: 0% 50%;
-	background-image: url('brazil.jpg');
-	width: 60%;
-}
-.travel4-img{
-	width: 60%;
-	background-image: url('travel4.jpg');
+.features-block p{
+	font-size: 2em;
+	font-weight: 200;
 }
 
+.features-flexcenter{
+	width: 30%;
+	float: left;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: 3%;
+}
 
+.features-flexcenter img{
+	width: 100%;
+}
 
-/*media queries*/
+.features-flexright{
+	float: left;
+	text-align: left;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 3%;
+}
+
+/* ============ media queries ============*/
+
 
 @media screen and (max-width: 1440px){
 	.travel1-img{
